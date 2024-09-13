@@ -1,0 +1,24 @@
+
+class Ship {
+  double getArea() {
+    return 0;
+  }
+}
+
+class Rectangle extends Ship {
+  double width;
+  double height;
+
+  Rectangle(this.width, this.height);
+
+  double getArea() {
+    return width * height;
+  }
+}
+
+void main() {
+  Rectangle rectangle = Rectangle(10.0, 5.0);
+
+
+  print("The area of the rectangle is: ${rectangle.getArea()}"); 
+}
